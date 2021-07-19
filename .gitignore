@@ -1,7 +1,25 @@
+# Indexes and caches
 .DS_Store
-Thumbs.db
-*.log
+._*
 *~
 
-# Development artefacts
+# Auto-generated files
+*.sw[a-p]
+/bundle
+/node_modules
+/vendor
+/tmp
+
+# Backup files
+*~
+*.bak
+*.old
+*.orig
+*.rej
+
+# Log files
+*.log
+/log
+
+# Development files
 /.vscode
