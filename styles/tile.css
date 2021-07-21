@@ -1,7 +1,5 @@
 @layer components {
   .tile {
-    @apply pb-20;
-
     > header {
       @apply pt-24 pb-4 w-min mx-auto;
     }
@@ -17,8 +15,6 @@
   }
 
   #about-us {
-    @apply pt-10;
-
     h2 { @apply hidden; }
   }
 
