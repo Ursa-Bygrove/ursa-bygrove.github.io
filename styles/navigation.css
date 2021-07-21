@@ -1,0 +1,46 @@
+@layer components {
+  .navigation {
+    @apply pt-6;
+
+    a:hover { text-decoration: underline dotted; }
+
+    ul { @apply flex flex-row flex-wrap justify-center; }
+    li {
+      @apply inline-block text-center;
+
+      &:first-child {
+        order: 1;
+
+        &::before {
+          @apply px-2;
+          content: '•'
+        }
+      }
+      &:last-child {
+        @apply w-full;
+        order: 2
+      }
+    }
+  }
+
+  @media screen(sm) {
+    .navigation {
+      @apply pt-8;
+
+      ul { @apply flex-row-reverse; }
+      li {
+        &:not(:last-child)::before {
+          @apply px-2;
+          content: '•'
+        }
+        &:first-child {
+          order: 0;
+        }
+        &:last-child {
+          @apply w-auto;
+          order: 0;
+        }
+      }
+    }
+  }
+}

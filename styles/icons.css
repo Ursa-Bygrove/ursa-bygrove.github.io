@@ -1,0 +1,15 @@
+@layer components {
+  .icons {
+    img { @apply h-4 svg-invert dark:opacity-100; }
+
+    .github {
+      content: svg-load('icons/GitHub.svg');
+    }
+    .linked-in {
+      content: svg-load('icons/LinkedIn.svg');
+    }
+    .email {
+      content: svg-load('icons/Email.svg');
+    }
+  }
+}

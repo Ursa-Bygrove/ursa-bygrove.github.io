@@ -1,0 +1,61 @@
+@layer components {
+  .tile {
+    @apply pb-20;
+
+    > header {
+      @apply pt-24 pb-4 w-min mx-auto;
+    }
+    > footer {
+      @apply pt-8 pb-12 font-normal;
+
+      a { @apply inline-block py-4 w-1/3; }
+    }
+
+    > img {
+      @apply block object-center object-cover rounded-2xl mx-auto;
+    }
+  }
+
+  #about-us {
+    @apply pt-10;
+
+    h2 { @apply hidden; }
+  }
+
+  #privacy-policy {
+    address > p:last-child { @apply pb-4; }
+    ul {
+      @apply list-outside pl-8 sm:pl-12 pr-2 py-2;
+      list-style-type: '–  ';
+    }
+  }
+  #contact-us {
+    ul {
+      @apply list-inside px-6 pt-2 pb-6 leading-8;
+
+      img { @apply inline-block svg h-4 pr-2; }
+      a:hover { text-decoration: underline dotted; }
+    }
+  }
+
+  @media screen(md) {
+    .tile {
+      @apply text-red-300
+    }
+  }
+
+  @media screen(lg) {
+    .tile {
+      @apply text-green-300
+    }
+  }
+
+  @media screen(xl) {
+    .tile {
+      @apply text-blue-300
+    }
+  }
+
+  @media screen(2xl) {
+  }
+}

@@ -1,0 +1,31 @@
+/**
+ * Import "Alegreya Sans" font from Google Fonts
+ *
+ * This is only required if Alegreya Sans isn't loaded elsewhere.
+ */
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;1,400;1,800&display=swap&text=URSA%26Bygrove'); */
+
+@layer components {
+  .logo {
+    @apply block w-min italic text-right;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6rem;
+    word-spacing: -0.9rem;
+
+    & .ursa {
+      @apply inline-block relative uppercase italic;
+      right: 0.95rem;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 0.225rem;
+    }
+
+    & .bygrove {
+      @apply table capitalize not-italic;
+      font-size: 3.6rem;
+      font-weight: 100;
+      letter-spacing: 0.216rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@layer components {
+  .tags {
+    @apply flex flex-row flex-wrap justify-center items-center;
+
+    > *[data-weight="-2"] {
+      @apply font-medium;
+      --weight: 0.7;
+    }
+    > *[data-weight="-1"] {
+      @apply font-normal;
+      --weight: 0.85;
+    }
+    > *[data-weight="0"] {
+      @apply font-normal;
+      --weight: 1;
+    }
+    > *[data-weight="1"] {
+      @apply font-light;
+      --weight: 1.25;
+    }
+    > *[data-weight="2"] {
+      @apply font-light;
+      --weight: 1.6;
+    }
+    > *[data-weight="3"] {
+      @apply font-light;
+      --weight: 2;
+    }
+
+    > * {
+      opacity: calc(1/4 + var(--weight)/4);
+      font-size: calc(var(--weight) * 100%);
+    }
+
+    a {
+      @apply inline-block py-0.5 px-1;
+    }
+  }
+}

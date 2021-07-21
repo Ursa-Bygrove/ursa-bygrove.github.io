@@ -1,0 +1,51 @@
+@layer components {
+  .logos {
+    @apply flex flex-wrap flex-row  justify-center items-center pt-16;
+    li {
+      @apply px-10 py-5;
+    }
+    a {
+      @apply p-0;
+    }
+    img {
+      @apply h-8 svg opacity-75;
+    }
+
+    .acumen {
+      content: svg-load('logos/Acumen.svg');
+    }
+    .bbc-iplayer {
+      content: svg-load('logos/BBC-iPlayer.svg');
+    }
+    .bbc-rd {
+      content: svg-load('logos/BBC-R&D.svg');
+    }
+    .bbc-radio4 {
+      content: svg-load('logos/BBC-Radio4.svg');
+    }
+    .cci-press {
+      content: svg-load('logos/CCI-Press.svg');
+    }
+    .cendyn {
+      content: svg-load('logos/Cendyn.svg');
+    }
+    .guestfolio {
+      content: svg-load('logos/Guestfolio.svg');
+    }
+    .kite {
+      content: svg-load('logos/Kite.svg');
+    }
+    .musicbrainz {
+      content: svg-load('logos/MusicBrainz.svg');
+    }
+    .roundtablehq {
+      content: svg-load('logos/RoundTableHQ.svg');
+    }
+    .seehund {
+      content: svg-load('logos/Seehund.svg');
+    }
+    .university-of-bath {
+      content: svg-load('logos/University-of-Bath.svg');
+    }
+  }
+}

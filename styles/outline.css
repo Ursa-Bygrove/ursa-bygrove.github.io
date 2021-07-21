@@ -1,0 +1,20 @@
+@keyframes outline {
+  from { @apply w-0 }
+  to { @apply w-full }
+}
+
+@layer utilities {
+  .animate-outline {
+    @apply block relative;
+    &::before, &::after {
+      @apply block absolute h-0.5 bg-line-dark dark:bg-line-light;
+      content: '';
+
+      /* animation: function keyframe duration delay count */
+      animation: ease outline 1.25s 0.5s 1;
+      animation-fill-mode: forwards;
+    }
+    &::before { @apply top-0 left-0 }
+    &::after { @apply bottom-0 right-0 }
+  }
+}

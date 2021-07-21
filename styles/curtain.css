@@ -1,0 +1,33 @@
+@keyframes reveal {
+  0% {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+  }
+  99% {
+    display: block;
+    visibility: visible;
+    opacity: 0;
+    z-index: 999;
+  }
+  100% {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -999;
+  }
+}
+
+@layer utilities {
+  .curtain {
+    @apply block fixed inset-0 overflow-hidden bg-fill-light dark:bg-fill-dark ;
+    z-index: 999;
+
+    &.reveal {
+      /* animation: function keyframe duration delay count */
+      animation: ease reveal 0.85s 0.15s 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
