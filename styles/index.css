@@ -30,8 +30,10 @@
   }
   p {
     @apply text-justify pb-4;
-    ul + & { @apply pt-4; }
+
     &:last-child { @apply pb-0; }
+    ul + & { @apply pt-4; }
+    a { text-decoration: underline dotted; }
   }
   img {
     @apply dark:opacity-75;
@@ -56,28 +58,32 @@
 
 body {
   @apply bg-fixed bg-no-repeat bg-center bg-cover font-light;
+  -webkit-overflow-scrolling: touch;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
-  -webkit-overflow-scrolling: touch;
+
+  @media screen(2xl) {
+    font-size: 24px;
+  }
 
   > header {
-    @apply flex flex-col h-screen justify-center items-center bg-bottom bg-no-repeat bg-contain pb-36;
+    @apply flex flex-col h-screen justify-center items-center bg-bottom bg-no-repeat bg-contain pb-36 xl:pb-96;
   }
 
   > main {
-    @apply pt-10 pb-20 px-4 md:px-16 space-y-20;
+    @apply pt-10 pb-48 lg:pb-64 px-4 md:px-16 space-y-48 lg:space-y-64;
 
     article {
       @apply tile;
 
       & > ul {
-        @apply mt-20;
+        @apply pt-48 lg:pt-64;
       }
     }
   }
 
   > section {
-    @apply fixed z-50 top-0 inset-x-0 bg-opacity-100 overflow-x-hidden overflow-y-auto overscroll-contain px-4 md:px-16;
+    @apply fixed z-50 top-0 inset-x-0 bg-opacity-100 overflow-x-hidden overflow-y-auto overscroll-contain px-4 md:px-16 lg:px-60 xl:px-96;
 
     article {
       @apply hidden h-screen tile;
@@ -95,6 +101,21 @@ body {
       .icons img { @apply h-8; }
     }
   }
+}
+
+#about-us {
+  > div {
+    @apply lg:px-24 xl:px-36;
+    p { @apply md:text-2xl 2xl:text-3xl; }
+  }
+}
+
+#software-development {
+  @apply lg:wide-tile;
+}
+
+#graphics-design {
+  @apply lg:wide-tile-reverse;
 }
 
 @media (prefers-color-scheme: light) {
