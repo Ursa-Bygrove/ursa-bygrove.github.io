@@ -5,7 +5,7 @@ const page = new Page()
 
 window.addEventListener("load", (event) => {
   document.documentElement.classList.remove('loading')
-  // page.scrollToggle(document.body)
+  page.scrollToggle(document.body)
 })
 
 window.addEventListener("hashchange", (event) => {
