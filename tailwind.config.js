@@ -7,7 +7,22 @@ module.exports = {
    './styles/**/*.css'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        line: {
+          light: '#f7f6f0',
+          dark: '#032326',
+        },
+        fill: {
+          light: '#deeae7',
+          dark: '#02232a'
+        },
+        footer: {
+          light: '#4c8785',
+          dark: '#383a37'
+        }
+      }
+    }
   },
   variants: {
     extend: {},
