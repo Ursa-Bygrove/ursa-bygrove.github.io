@@ -34,15 +34,43 @@
     }
   }
 
+  @responsive {
+    .wide-tile {
+      @apply tile flex flex-row gap-16;
+
+      > img {
+        @apply m-0 object-left-top w-1/3 xl:w-1/2;
+      }
+      > div {
+        @apply m-0 w-2/3 xl:w-1/2;
+
+        h2 { @apply pt-0; }
+      }
+    }
+
+    .wide-tile-reverse {
+      @apply wide-tile flex-row-reverse;
+    }
+  }
+
+  /* --- DEBUG --- */
+
+  /*
+  @media screen(sm) {
+    .tile {
+      @apply text-yellow-300;
+    }
+  }
+
   @media screen(md) {
     .tile {
-      @apply text-red-300
+      @apply text-red-300;
     }
   }
 
   @media screen(lg) {
     .tile {
-      @apply text-green-300
+      @apply text-green-300;
     }
   }
 
@@ -53,5 +81,11 @@
   }
 
   @media screen(2xl) {
+    .tile {
+      @apply text-purple-300
+    }
   }
+  /*
+  */
+
 }
