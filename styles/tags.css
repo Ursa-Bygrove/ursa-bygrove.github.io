@@ -1,7 +1,6 @@
 @layer components {
   .tags {
-    @apply flex flex-row flex-wrap justify-center items-center relative -inset-x-1 -inset-y-0.5;
-    width: calc(100% + theme(space.1) + theme(space.1));
+    @apply flex flex-row flex-wrap justify-center items-center gap-x-2 gap-y-1;
 
     > *[data-weight="-2"] {
       @apply font-medium;
@@ -31,10 +30,6 @@
     > * {
       opacity: calc(1/4 + var(--weight)/4);
       font-size: calc(var(--weight) * 100%);
-    }
-
-    a {
-      @apply inline-block px-1 py-0.5;
     }
   }
 }

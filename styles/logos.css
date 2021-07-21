@@ -1,11 +1,7 @@
 @layer components {
   .logos {
-    @apply flex flex-wrap flex-row  justify-center items-center relative -inset-x-10 -inset-y-5;
-    width: calc(100% + theme(space.10) + theme(space.10));
+    @apply flex flex-wrap flex-row  justify-center items-center gap-x-20 gap-y-10;
 
-    li {
-      @apply px-10 py-5;
-    }
     a {
       @apply p-0;
     }
