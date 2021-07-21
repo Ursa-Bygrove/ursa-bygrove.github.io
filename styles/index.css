@@ -104,9 +104,10 @@ body {
 }
 
 #about-us {
+  @apply lg:wide-tile;
+
   > div {
-    @apply lg:px-24 xl:px-36;
-    p { @apply md:text-2xl 2xl:text-3xl; }
+    p { @apply md:text-2xl; }
   }
 }
 
