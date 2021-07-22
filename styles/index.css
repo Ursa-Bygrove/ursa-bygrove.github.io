@@ -67,7 +67,8 @@ body {
   }
 
   > header {
-    @apply flex flex-col h-screen justify-center items-center bg-bottom bg-no-repeat bg-contain pb-36 xl:pb-96;
+    @apply flex flex-col h-screen justify-center items-center bg-bottom bg-no-repeat pb-36;
+    background-size: auto 30%;
   }
 
   > main {
