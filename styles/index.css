@@ -23,7 +23,7 @@
     font-size: 1.68rem;
   }
   h2 {
-    @apply text-center pt-12 pb-8 uppercase tracking-widest font-medium;
+    @apply text-center pt-16 pb-8 uppercase tracking-widest font-medium;
   }
   h3 {
     @apply text-left pt-8 pb-4 capitalize tracking-widest font-normal;
@@ -71,13 +71,13 @@ body {
   }
 
   > main {
-    @apply pt-10 pb-48 lg:pb-64 px-4 md:px-16 space-y-48 lg:space-y-64;
+    @apply pt-10 pb-48 lg:pb-56 px-4 md:px-16 space-y-48 lg:space-y-56;
 
     article {
       @apply tile;
 
       & > ul {
-        @apply pt-48 lg:pt-64;
+        @apply pt-48 lg:pt-56;
       }
     }
   }
@@ -104,7 +104,7 @@ body {
 }
 
 #about-us {
-  @apply lg:wide-tile;
+  @apply xl:wide-tile;
 
   > div {
     p { @apply md:text-2xl; }
