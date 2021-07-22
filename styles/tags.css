@@ -28,7 +28,7 @@
     }
 
     > * {
-      --animation-duration: 0.3s;
+      --animation-duration: 0.2s;
       --animation-delay: 0.2s;
 
       @apply text-current;
@@ -37,7 +37,7 @@
       transition: opacity var(--animation-duration) var(--animation-delay) ease-out, color var(--animation-duration) var(--animation-delay) ease-out;
 
       &:hover {
-        @apply text-red-500;
+        @apply text-yellow-600 dark:text-teal-600;
         opacity: 1;
         transition: opacity var(--animation-duration) var(--animation-delay) ease-out, color var(--animation-duration) var(--animation-delay) ease-out;
       }

@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   darkMode: 'media',
@@ -7,6 +9,21 @@ module.exports = {
    './styles/**/*.css'
   ],
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.coolGray,
+      red: colors.red,
+      yellow: colors.amber,
+      green: colors.emerald,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      purple: colors.violet,
+      pink: colors.pink,
+      teal: colors.teal
+    },
     extend: {
       colors: {
         line: {
@@ -14,7 +31,7 @@ module.exports = {
           dark: '#032326',
         },
         fill: {
-          light: '#deeae7',
+          light: '#e4d7bb',
           dark: '#02232a'
         },
         footer: {

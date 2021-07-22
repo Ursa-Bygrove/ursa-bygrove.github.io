@@ -10,7 +10,7 @@
 
   .svg-invert {
     @media (prefers-color-scheme: light) {
-      filter: invert(94%) sepia(13%) saturate(105%) hue-rotate(115deg) brightness(99%) contrast(89%);
+      filter: invert(92%) sepia(21%) saturate(341%) hue-rotate(340deg) brightness(95%) contrast(88%);
     }
     @media (prefers-color-scheme: dark) {
       filter: invert(11%) sepia(24%) saturate(1850%) hue-rotate(146deg) brightness(90%) contrast(98%);
