@@ -36,6 +36,6 @@
 
 @layer components {
   .carousel {
-    @apply py-8 text-2xl xl:text-3xl 2xl:text-4xl tracking-wider font-normal animate-carousel;
+    @apply py-8 text-2xl 2xl:text-3xl tracking-wider font-normal animate-carousel;
   }
 }
