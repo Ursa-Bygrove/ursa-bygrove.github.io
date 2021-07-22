@@ -33,7 +33,7 @@
 
     &:last-child { @apply pb-0; }
     ul + & { @apply pt-4; }
-    a { text-decoration: underline dotted; }
+    a:hover { text-decoration: underline dotted; }
   }
   img {
     @apply dark:opacity-75;
