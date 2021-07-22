@@ -36,7 +36,7 @@
 
   @responsive {
     .wide-tile {
-      @apply tile flex flex-row justify-center items-center gap-20;
+      @apply tile flex flex-row xl:justify-center xl:items-center gap-20;
 
       > ul, > img {
         @apply m-0 p-0 object-left-top w-1/3 xl:w-1/2;
