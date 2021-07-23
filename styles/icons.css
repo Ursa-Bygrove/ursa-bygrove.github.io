@@ -1,15 +1,22 @@
 @layer components {
   .icons {
-    img { @apply h-4 svg-invert dark:opacity-100; }
+    img {
+      @apply dark:opacity-100;
+      mask-position: center;
+      mask-repeat: no-repeat;
+    }
 
     .github {
-      content: svg-load('icons/GitHub.svg');
+      mask-image: svg-load('icons/GitHub.svg');
+      content: '';
     }
     .linked-in {
-      content: svg-load('icons/LinkedIn.svg');
+      mask-image: svg-load('icons/LinkedIn.svg');
+      content: '';
     }
     .email {
-      content: svg-load('icons/Email.svg');
+      mask-image: svg-load('icons/Email.svg');
+      content: '';
     }
   }
 }

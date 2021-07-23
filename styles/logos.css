@@ -6,7 +6,7 @@
       @apply p-0;
     }
     img {
-      @apply h-8 svg opacity-75;
+      @apply h-8 opacity-75;
     }
 
     .acumen {
