@@ -55,21 +55,31 @@
   @apply overflow-hidden overscroll-contain;
 }
 
+html {
+  @apply bg-fill-light dark:bg-fill-dark;
+}
+
 body {
-  @apply bg-fixed bg-no-repeat bg-center bg-cover font-light;
+  @apply z-0 font-light text-line-dark dark:text-line-light;
   -webkit-overflow-scrolling: touch;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
 
-  @media screen(2xl) {
-    font-size: 24px;
-  }
+  @media screen(2xl) { font-size: 24px; }
 
+  &::before {
+    /* https://stackoverflow.com/a/43058483/2068165 */
+    @apply block fixed inset-0 h-screen bg-center bg-cover;
+    z-index: -1;
+    content: '';
+  }
   > header {
     @apply flex flex-col h-screen justify-center items-center bg-bottom bg-no-repeat pb-36;
     background-size: auto 30%;
   }
-
+  > main, > section {
+    @apply bg-fill-light dark:bg-fill-dark;
+  }
   > main {
     @apply pt-10 pb-48 lg:pb-56 px-4 md:px-16 space-y-48 lg:space-y-56;
 
@@ -93,12 +103,12 @@ body {
   }
 
   > footer {
-    @apply pt-20 pb-8;
+    @apply pt-20 pb-8 text-fill-light dark:text-fill-dark bg-footer-dark dark:bg-footer-light;
 
     > address {
       ul { @apply flex justify-center; }
       li { @apply inline-block px-4; }
-      .icons img { @apply h-8; }
+      .icons img { @apply h-8 w-8 bg-fill-light dark:bg-fill-dark; }
     }
   }
 }
@@ -121,17 +131,11 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    @apply text-line-dark;
-    background-image: url("./images/background/light.jpg");
-
+    &:before {
+      background-image: url("./images/background/light.jpg");
+    }
     > header {
       background-image: url("./images/treeline/light.png");
-    }
-    > main, > section {
-      @apply bg-fill-light;
-    }
-    > footer {
-      @apply text-fill-light bg-footer-dark;
     }
   }
 
@@ -148,17 +152,11 @@ body {
   h1 { backdrop-filter: blur(2px) opacity(60%); }
 
   body {
-    @apply text-line-light;
-    background-image: url("./images/background/dark.jpg");
-
+    &:before {
+      background-image: url("./images/background/dark.jpg");
+    }
     > header {
       background-image: url("./images/treeline/dark.png");
-    }
-    > main, > section {
-      @apply bg-fill-dark;
-    }
-    > footer {
-      @apply text-fill-dark bg-footer-light;
     }
   }
 
