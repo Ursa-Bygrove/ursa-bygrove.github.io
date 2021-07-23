@@ -7,6 +7,13 @@
     }
     img {
       @apply h-8 opacity-75;
+
+      @media (prefers-color-scheme: light) {
+        filter: invert(10%) sepia(10%) saturate(4073%) hue-rotate(138deg) brightness(96%) contrast(98%);
+      }
+      @media (prefers-color-scheme: dark) {
+        filter: invert(90%) sepia(2%) saturate(699%) hue-rotate(348deg) brightness(111%) contrast(94%);
+      }
     }
 
     .acumen {
