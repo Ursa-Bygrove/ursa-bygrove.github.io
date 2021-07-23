@@ -10,7 +10,7 @@
     }
 
     > img {
-      @apply block object-center object-cover rounded-2xl mx-auto;
+      @apply block object-center object-cover rounded-2xl shadow-lg mx-auto;
     }
   }
 
