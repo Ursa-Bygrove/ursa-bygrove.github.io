@@ -4,7 +4,7 @@
       @apply pt-24 pb-4 w-min mx-auto;
     }
     > footer {
-      @apply pt-8 pb-12 font-normal;
+      @apply pt-8 pb-24 md:pb-16 font-normal;
 
       a { @apply inline-block py-4 w-1/3; }
     }
