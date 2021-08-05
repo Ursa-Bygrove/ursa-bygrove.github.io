@@ -125,26 +125,26 @@ body {
   @apply lg:wide-tile;
 }
 
-#graphics-design {
+#graphic-design {
   @apply lg:wide-tile-reverse;
 }
 
 @media (prefers-color-scheme: light) {
   body {
     &:before {
-      background-image: url("./images/background/light.jpg");
+      background-image: url("./images/light/background.jpg");
     }
     > header {
-      background-image: url("./images/treeline/light.png");
+      background-image: url("./images/light/treeline.png");
     }
   }
 
   img {
     #software-development > & {
-      content: url("./images/software-development.jpg");
+      content: url("./images/light/software-development.png");
     }
-    #graphics-design > & {
-      content: url("./images/graphics-design/light.jpg");
+    #graphic-design > & {
+      content: url("./images/light/graphic-design.png");
     }
   }
 }
@@ -153,19 +153,19 @@ body {
 
   body {
     &:before {
-      background-image: url("./images/background/dark.jpg");
+      background-image: url("./images/dark/background.jpg");
     }
     > header {
-      background-image: url("./images/treeline/dark.png");
+      background-image: url("./images/dark/treeline.png");
     }
   }
 
   img {
     #software-development > & {
-      content: url("./images/software-development.jpg");
+      content: url("./images/dark/software-development.png");
     }
-    #graphics-design > & {
-      content: url("./images/graphics-design/dark.jpg");
+    #graphic-design > & {
+      content: url("./images/dark/graphic-design.png");
     }
   }
 }
