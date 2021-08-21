@@ -12,11 +12,30 @@
   <link href="./styles.css" rel="stylesheet">
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org/",
+      "@context": "https://schema.org/",
       "@graph": [
         {
+          "@type": "WebPage",
+          "name": "Ursa & Bygrove",
+          "description": "We provide a full range of services covering the whole life-cycle of an application: design, development, optimisation, containerisation, deployment, maintenance, upgrade, and audit.",
+          "keywords": "contract, service, web design, software development, graphic design, ruby, ruby on rails, docker, typography, iconography, branding",
+          "offers": [
+            { "@id": "https://ursa-bygrove.com/#software-development" },
+            { "@id": "#https://ursa-bygrove.com/graphic-design" },
+            { "@id": "https://ursa-bygrove.com/#web-development" }
+          ],
+          "isPartOf": { "@id": "https://ursa-bygrove.com/#website" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ursa-bygrove.com/#website",
+          "name": "Ursa & Bygrove",
+          "url": "https://ursa-bygrove.com/",
+          "publisher": { "@id": "https://ursa-bygrove.com/#organisation" }
+        },
+        {
           "@type": "Corporation",
-          "@id": "#ursa-bygrove",
+          "@id": "https://ursa-bygrove.com/#organisation",
           "name": "Ursa & Bygrove",
           "url": "https://ursa-bygrove.com/",
           "email": "hello@ursa-bygrove.com",
@@ -45,20 +64,18 @@
             "https://www.linkedin.com/company/Ursa-Bygrove",
             "https://github.com/orgs/Ursa-Bygrove"
           ],
-          "brand": [
-          ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "itemListElement": [
-              { "@id": "#software-development" },
-              { "@id": "#graphic-design" },
-              { "@id": "#web-development" }
+              { "@id": "https://ursa-bygrove.com/#software-development" },
+              { "@id": "#https://ursa-bygrove.com/graphic-design" },
+              { "@id": "https://ursa-bygrove.com/#web-development" }
             ]
           },
           "knowsAbout": [
-            { "@id": "#software-development" },
-            { "@id": "#graphic-design" },
-            { "@id": "#web-development" },
+            { "@id": "https://ursa-bygrove.com/#software-development" },
+            { "@id": "https://ursa-bygrove.com/#graphic-design" },
+            { "@id": "https://ursa-bygrove.com/#web-development" },
             {
               "@type": "Service",
               "name": "Containerisation",
@@ -216,27 +233,27 @@
         },
         {
           "@type": "Service",
-          "@id": "#software-development",
+          "@id": "https://ursa-bygrove.com/#software-development",
           "name": "Software development",
           "description": "With over two decades of experience, we specialise in the development of high-performance microservices, data-driven APIs, and process automation tools on Unix platforms.",
           "additionalType": "https://www.wikidata.org/wiki/Q638608",
-          "provider": { "@id": "#ursa-bygrove" }
+          "provider": { "@id": "https://ursa-bygrove.com/#organisation" }
         },
         {
           "@type": "Service",
-          "@id": "#graphic-design",
+          "@id": "https://ursa-bygrove.com/#graphic-design",
           "name": "Graphic design",
           "description": "We provide a range of design services for both digital and print media including dynamic web design, UI/UX, logo, branding, and design of marketing materials.",
           "additionalType": "https://www.wikidata.org/wiki/Q185925",
-          "provider": { "@id": "#ursa-bygrove" }
+          "provider": { "@id": "https://ursa-bygrove.com/#organisation" }
         },
         {
           "@type": "Service",
-          "@id": "#web-development",
+          "@id": "https://ursa-bygrove.com/#web-development",
           "name": "Web development",
           "description": "We work with individuals and businesses of all shapes and sizes to provide solutions tailor-made to your needs, be it graphic design or software development.",
           "additionalType": "https://www.wikidata.org/wiki/Q386275",
-          "provider": { "@id": "#ursa-bygrove" }
+          "provider": { "@id": "https://ursa-bygrove.com/#organisation" }
         }
       ]
     }
