@@ -31,11 +31,11 @@ module.exports = {
           dark: '#032326',
         },
         fill: {
-          light: '#e4d7bb',
-          dark: '#02232a'
+          light: '#EDECE8',
+          dark: '#202529'
         },
         footer: {
-          light: '#4c8785',
+          light: '#88898A',
           dark: '#383a37'
         }
       }
