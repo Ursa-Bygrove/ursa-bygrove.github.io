@@ -1,6 +1,6 @@
 @keyframes carousel {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     opacity: 0;
   }
   10%, 15% {
@@ -8,7 +8,7 @@
     opacity: 1;
   }
   25%, 100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
 }
